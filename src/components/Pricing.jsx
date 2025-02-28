@@ -22,7 +22,7 @@ function Pricing() {
     },
     {
       name: t.pro,
-      price: "$4.99",
+      price: "4.99MAD",
       period: t.perMonth,
       description: t.proDesc,
       features: [
@@ -36,23 +36,6 @@ function Pricing() {
       ],
       buttonText: t.getPro,
       isPopular: true
-    },
-    {
-      name: t.team,
-      price: "$9.99",
-      period: t.perUserMonth,
-      description: t.teamDesc,
-      features: [
-        "Everything in Pro",
-        "Team analytics dashboard",
-        "Shared task lists",
-        "Team challenges",
-        "Admin controls",
-        "Team reporting",
-        "Dedicated support"
-      ],
-      buttonText: t.contactSales,
-      isPopular: false
     }
   ];
 

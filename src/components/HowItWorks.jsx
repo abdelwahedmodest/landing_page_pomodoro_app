@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { LanguageContext } from '../context/LanguageContext';
 
 function HowItWorks() {
-  const { t } = useContext(LanguageContext);
+  const { t, lang } = useContext(LanguageContext);
 
   const steps = [
     {
@@ -48,7 +48,14 @@ function HowItWorks() {
         </div>
         
         <div className="app-demo">
-          <img src="https://placehold.co/800x450/ff6347/ffffff?text=App+Demo" alt="FocusTimer App Demo" />
+          {lang === 'ar' ? (
+            <video controls>
+              <source src="pomodoro_arabic.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          ) : (
+            <img src="maticha.jpg" alt="FocusTimer App Demo" />
+          )}
           <div className="demo-overlay">
             <a href="#" className="play-button">▶</a>
             <p>{t.seeHowItWorks}</p>
@@ -105,6 +112,11 @@ function HowItWorks() {
         }
         
         .app-demo img {
+          display: block;
+          width: 100%;
+        }
+        
+        .app-demo video {
           display: block;
           width: 100%;
         }

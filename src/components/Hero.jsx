@@ -33,7 +33,7 @@ function Hero() {
         </div>
         
         <div className="hero-image">
-          <img src="https://placehold.co/600x400/ff6347/ffffff?text=FocusTimer+App" alt="FocusTimer App Screenshot" />
+        <img src="maticha.jpg" alt="FocusTimer App Demo" />
         </div>
       </div>
       
